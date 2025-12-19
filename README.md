@@ -10,7 +10,36 @@ This repository includes the code for the paper “_**It’s Morphing Time: Unle
 
 <img src="./assets/MM-MO.png">
 
-## 🚧 Code Coming Soon! 🚧
+## 🚀 Getting Started
+
+### Install dependencies
+
+Please install the required dependencies of the following projects:
+
+1. OpenCompass
+   https://github.com/open-compass/opencompass
+
+2. MergeKit
+   https://github.com/arcee-ai/mergekit
+
+3. BoTorch
+   https://github.com/pytorch/botorch
+
+### File Structure
+```
+MM-MO/
+├── 📂 config/         # Stores all generated model merge configurations
+├── 📂 merge_info/     # Stores evaluation results of all merged models
+├── 📂 merged/         # Temporarily stores merged models; automatically cleaned up after evaluation to avoid excessive disk usage
+├── 📂 save_logs/      # Stores all log files
+├── 📂 utils/          # Stores all related utility tools
+
+├── 📄 mm_mo.py                       # 🚀 MM-MO main program; all core logic is centralized here for easier debugging and modification
+├── 📄 evaluate_model_fitness.py      # 🧪 Evaluates sparsity-related metrics of merged models
+├── 📄 evaluate_model_opencompass.py  # 🏆 Evaluates merged model performance across different tasks (via OpenCompass)
+└── 📄 merge_local.py                 # 🌋 Merges models and saves them locally (via MergeKit)
+```
+
 
 ## Citation
 
